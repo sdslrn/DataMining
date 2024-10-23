@@ -46,6 +46,21 @@
     13. LSTAT    % lower status of the population
     14. MEDV     Median value of owner-occupied homes in $1000's
 
+    CRIM: 每个镇的人均犯罪率
+    ZN: 占地面积超过25,000平方英尺的住宅用地比例
+    INDUS: 非零售商业用地的比例
+    CHAS: Charles River虚拟变量（若地块靠近河流则为1，否则为0）
+    NOX: 一氧化氮浓度（百万分之几）
+    RM: 每个住宅的平均房间数
+    AGE: 1940年以前建成的自住房比例
+    DIS: 到波士顿五个就业中心的加权距离
+    RAD: 高速公路的可达性指数
+    TAX: 每$10,000的全额财产税率
+    PTRATIO: 每个镇的师生比例
+    B: 1000(Bk - 0.63)^2，其中 Bk 为每个镇的黑人比例
+    LSTAT: 低收入人群的百分比
+    MEDV: 自住房的中位数价值（以千美元为单位）
+
 8. Missing Attribute Values:  None.
 
 

@@ -49,13 +49,13 @@ if __name__ == "__main__":
     test_loss = []
     for epoch in range(num_epochs):
         # for X,y in dataloader:
-        l = loss(net(X_train), y_train)
+        l = loss(net(X_train), y_train)  # 计算损失，前向传播
         if epoch % 100 == 0:
             print(f'epoch {epoch}, train loss {l:f}')
             train_loss.append([epoch, l.item()])
         optimizer.zero_grad()  # 在每个训练循环开始前将梯度归零，避免上一次迭代的梯度影响当前迭代
-        l.backward()
-        optimizer.step()
+        l.backward()  # 反向传播
+        optimizer.step()  # 更新模型参数
         if epoch % 100 == 0:
             l = loss(net(X_test), y_test)
             print(f'epoch {epoch}, test loss {l:f}')
